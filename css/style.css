@@ -1,0 +1,66 @@
+:root {
+  --main-font: "Pacifico", cursive;
+  --sec-font: "PT Sans Caption", sans-serif;
+  --main-color: #312b30;
+}
+
+::selection {
+  background: #a7b6dd;
+}
+
+body {
+  color: #212529;
+  background-color: #cad3e9;
+}
+
+h1 {
+  color: var(--main-color);
+  font-family: var(--main-font);
+  letter-spacing: 2px;
+  font-size: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+h1::after {
+  content: "";
+  background-color: #a5bfdd;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 20px;
+  transition: height 0.3s;
+}
+
+.head:hover h1::after {
+  height: 60%;
+}
+
+.intro-h2 {
+  font-family: "Righteous", cursive;
+}
+
+.intro-h2 i {
+  color: #8fb6e2;
+}
+
+label {
+  font-family: var(--sec-font);
+}
+
+.submit-btn {
+  width: 340px;
+  background-color: #74afc7;
+  transition: sheen all;
+  animation: sheen;
+}
+
+.submit-btn:hover {
+  background-color: #408ead;
+}
+
+li{
+  width: px;
+}

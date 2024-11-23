@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="inner d-flex flex-column align-items-center">
+        <div class="head pt-5 w-25 d-flex justify-content-center">
+          <h1 class="">Bookmarker</h1>
+        </div>
+
+        <div class="form mt-5 w-100">
+          <div class="text-center">
+            <h2 class="fs-4 intro-h2">
+              <i class="fa-solid fa-bookmark"></i>
+              Bookmark your favorite sites
+              <i class="fa-solid fa-bookmark"></i>
+            </h2>
+          </div>
+
+          <div class="my-3 px-4">
+            <label class="fw-semibold" for="site-name">
+              <i class="fa-solid pe-2 fa-book-bookmark"></i>
+              Site Name
+            </label>
+
+            <input
+              type="text"
+              placeholder="Bookmark Name"
+              id="site-name"
+              class="form-control my-2"
+              value=""
+            />
+
+            <label class="fw-semibold" for="site-url">
+              <i class="fa-solid pe-2 fa-link"></i>
+              Site URL
+            </label>
+
+            <input
+              type="text"
+              placeholder="Website URL"
+              id="site-url"
+              class="form-control my-2"
+              value=""
+            />
+          </div>
+        </div>
+
+        <button class="btn submit-btn my-2 text-white" onclick="getSite()">
+          Submit
+        </button>
+      </div>
+    </div>
+
+    <div class="container pt-5">
+      <div class="table-inner">
+        <table class="table">
+          <thead>
+            <tr class="text-center">
+              <th>index</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+
+          <tbody id="site"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
