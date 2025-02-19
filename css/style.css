@@ -20,6 +20,7 @@ h1 {
   font-size: 3rem;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 
 h1::after {
@@ -38,8 +39,10 @@ h1::after {
   height: 60%;
 }
 
+/* Form */
 .intro-h2 {
   font-family: "Righteous", cursive;
+  text-align: center;
 }
 
 .intro-h2 i {
@@ -51,7 +54,8 @@ label {
 }
 
 .submit-btn {
-  width: 340px;
+  width: 100%;
+  max-width: 340px;
   background-color: #74afc7;
   transition: sheen all;
   animation: sheen;
@@ -61,6 +65,52 @@ label {
   background-color: #408ead;
 }
 
-li{
-  width: px;
+.table-inner {
+  overflow-x: auto;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .intro-h2 {
+    font-size: 1.25rem;
+  }
+  .form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .submit-btn {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .intro-h2 {
+    font-size: 1.1rem;
+  }
+  .form {
+    width: 100%;
+  }
+  .submit-btn {
+    width: 100%;
+  }
+  table {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  .intro-h2 {
+    font-size: 1rem;
+  }
+  .submit-btn {
+    font-size: 0.9rem;
+  }
 }

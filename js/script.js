@@ -11,7 +11,7 @@ if (localStorage.getItem("sitesKey") != null) {
 function getSite() {
   let siteNameValue = siteName.value.trim();
   let siteUrlValue = siteUrl.value.trim();
-  console.log(siteNameValue.length);
+  // console.log(siteNameValue.length);
 
   var alertString = `
         <div class="text-start mt-2">
